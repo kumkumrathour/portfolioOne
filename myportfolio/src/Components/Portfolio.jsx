@@ -54,7 +54,6 @@ const Portfolio = () => {
      ))}
      </div>
        </div>
-      <div>Porfolio</div>
     </div>
   );
 }
