@@ -1,6 +1,7 @@
 import React from 'react';
 import image from '../Image/image.png';
-import {MdOutlineKeyboardDoubleArrowRight}  from 'react-icons/md'
+import {MdOutlineKeyboardDoubleArrowRight}  from 'react-icons/md';
+import { Link } from 'react-scroll';
 const Home = () => {
   return (
     <div name='home'  className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 ">
@@ -13,12 +14,12 @@ const Home = () => {
            I have strong skills in HTML, CSS, JavaScript, and React. I have hands-on experience in creating responsive and user-friendly websites using these technologies. I have a good understanding of web development principles and best practices. I am a quick learner and enjoy staying up-to-date with the latest trends and technologies in the industry. I am a strong team player and can communicate effectively with other developers and stakeholders to ensure successful project outcomes .
           </p>
           <div>
-            <button className='group text-white w-fit px-6 py-3 my-2 flex item-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>
+            <Link to="portfolio" smooth duration={500} className='group text-white w-fit px-6 py-3 my-2 flex item-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>
               Portfolio
               <span className='group-hover:rotate-90 duration-300'>
                  <MdOutlineKeyboardDoubleArrowRight size={25} className="ml-1"/>
               </span>
-            </button>
+            </Link>
           </div>
         </div>
 
